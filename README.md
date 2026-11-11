@@ -1,78 +1,70 @@
 # Fashion-MNIST Clothing Classifier
 
-**Course:** Programming for AI (AI2203)  
-**Program:** BS Artificial Intelligence  
-**University:** Riphah School of Computing & Innovation  
-**Project:** P21 — Fashion-MNIST Clothing Classifier
+## Team Members
+1. Hafiza Fatima Khurram
+2. Areeha Shafqat
 
-## 1. Introduction
+## Course Information
+- Course: Programming for AI
+- Course Code: AI2203
+- Semester: Fall 2026
+- Instructor: Abida Noaman
+- Department: BS Artificial Intelligence
 
-This project aims to develop a machine learning system that classifies clothing images into ten different categories. It uses the Fashion-MNIST dataset, which contains 28 × 28 grayscale clothing images.
+## Project Introduction
+The Fashion-MNIST Clothing Classifier is a machine learning project that aims to classify clothing images into different categories. It uses the Fashion-MNIST dataset, which contains grayscale images of different clothing items. The project will compare two machine learning approaches to understand their performance.
 
-The system will help demonstrate how artificial intelligence can automatically identify and categorize clothing items.
-
-## 2. Project Objectives
-
+## Project Objectives
 - Load and explore the Fashion-MNIST dataset.
-- Perform data exploration and visualization.
-- Prepare image data for machine learning.
-- Train and evaluate classification models.
-- Compare a PyTorch model with Scikit-learn's MLPClassifier.
-- Develop a simple Streamlit application for clothing image classification.
+- Preprocess and prepare image data.
+- Build a neural network model using PyTorch.
+- Compare the model with Scikit-learn's MLPClassifier.
+- Evaluate model performance using suitable metrics.
+- Develop a simple application to demonstrate predictions.
 
-## 3. Dataset Information
+## Dataset
+- Dataset Name: Fashion-MNIST
+- Source: https://github.com/zalandoresearch/fashion-mnist
+- Total Images: 70,000
+- Image Size: 28 × 28 pixels
+- Image Type: Grayscale
+- Classes: 10 clothing categories
+- Planned Subset: 10,000 training images and 2,000 testing images.
 
-- **Dataset:** Fashion-MNIST
-- **Source:** https://github.com/zalandoresearch/fashion-mnist
-- **Total Images:** 70,000
-- **Image Size:** 28 × 28 pixels
-- **Image Type:** Grayscale
-- **Classes:** 10
-- **Planned Subset:** 10,000 training images and 2,000 testing images.
-- **License:** MIT License (Zalando SE, 2017).
+## Planned Methodology
+1. Dataset loading and exploration.
+2. Data preprocessing and visualization.
+3. Building a PyTorch MLP model.
+4. Implementing a Scikit-learn MLPClassifier baseline.
+5. Comparing model performance.
+6. Creating a simple Streamlit demonstration app.
 
-## 4. Target and Features
+## Tools and Technologies
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- PyTorch
+- Scikit-learn
+- Streamlit
+- Jupyter Notebook
 
-The target variable is the clothing category (10 classes).
-
-The main input features are the pixel values of each 28 × 28 image, which will be converted into 784 numerical features.
-
-## 5. Planned Methodology
-
-- Explore and visualize the dataset.
-- Prepare and flatten image features.
-- Train a small neural network using PyTorch.
-- Implement the training loop manually.
-- Compare results with Scikit-learn's MLPClassifier.
-- Evaluate models using accuracy, loss curves and confusion matrices.
-
-## 6. Planned Demonstration
-
-A simple Streamlit application will allow users to upload a clothing image and receive its predicted clothing category.
-
-## 7. Limitations and Ethical Considerations
-
-- The dataset contains simple grayscale images and may not represent real-world clothing photographs.
-- The model may incorrectly classify visually similar clothing categories.
-- The dataset does not represent every clothing style or cultural variation.
-- Predictions are educational demonstrations and should not be treated as definitive results.
-
-## 8. Team Members
-
-- Member 1: [Name and Registration Number]
-- Member 2: [Name and Registration Number]
-
-## 9. Future Work
-
-- Complete data preprocessing and EDA.
-- Train and compare classification models.
-- Perform experiment tracking and testing.
-- Develop the Streamlit application.
-- Evaluate model performance and document limitations.
-
-## 10. References
-
-1. Fashion-MNIST Dataset: https://github.com/zalandoresearch/fashion-mnist
-2. Fashion-MNIST Research Paper: https://arxiv.org/abs/1708.07747
-3. PyTorch Documentation: https://pytorch.org/docs/
-4. Scikit-learn Documentation: https://scikit-learn.org/
+## Repository Structure
+```text
+Fashion-MNIST-Clothing-Classifier/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── Fashion_MNIST_Clothing_Classifier.ipynb
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+├── src/
+├── app/
+├── tests/
+└── reports/
